@@ -1,0 +1,86 @@
+/*STYLES FOR CSS POPUP*/
+
+#background {
+	background-color:#111;
+	opacity: 0.65;
+	*background:none;
+	position:absolute;
+	z-index: 9001;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+
+#searchBar {
+	position:fixed;		
+	width:640px;
+	height:500px;
+	z-index: 9002;
+}
+
+#searchResults{
+	margin: 10px;
+	min-width:640px;
+	height:420px;
+	color: white;
+}
+
+/*CSS copied from various site. Fix this*/
+
+.searchContainer{
+  width: 640px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+ 
+.searchContainer input#searchBox{
+  width: 640px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.searchContainer input#searchBox::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.searchContainer input#searchBox:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.searchContainer input#searchBox::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.searchContainer input#searchBox:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.searchContainer .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 15px;
+  margin-top: 15px;
+  z-index: 1;
+  color: #4f5b66;
+ 
+  -webkit-transform:scale(1.7);
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+.searchContainer input#searchBox:focus, .searchContainer input#searchBox:active{
+    outline:none; 
+}
